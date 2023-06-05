@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			property="og:title"
+			content="Magic: The Gathering | Unofficial Website"
+		/>
+		<meta
+			property="og:image"
+			content="https://assetsio.reedpopcdn.com/magic-the-gathering-phyrexia-all-will-be-one-elesh-norn-teaser-art.png?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:description"
+			content="This website was created as the final project of Coderhouse's web development course by Breno Alcântara, Lorena Costa, and Yann Costa."
+		/>
+		<meta
+			property="og:url"
+			content="https://ynncstslv.github.io/coderhouse-45395-webdev-final-mtg/"
+		/>
+		<meta
+			name="twitter:title"
+			content="Magic: The Gathering | Unofficial Website"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://assetsio.reedpopcdn.com/magic-the-gathering-phyrexia-all-will-be-one-elesh-norn-teaser-art.png?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+		/>
+		<meta
+			name="twitter:description"
+			content="This website was created as the final project of Coderhouse's web development course by Breno Alcântara, Lorena Costa, and Yann Costa."
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="../styles/index.css" />
+		<link rel="stylesheet" href="../styles/database.css" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../assets/images/meta/mtg-favicon.png"
+		/>
+		<title>Magic: The Gathering | Unofficial Website - Card Database</title>
+	</head>
+	<body>
+		<nav>
+			<div class="container nav-container">
+				<img
+					src="../assets/images/nav/mtg-logo-white.png"
+					alt="Magic: The Gathering Logo"
+				/>
+				<ul class="nav-menu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./lore.html">Lore</a></li>
+					<li><a href="./rules.html">Rules</a></li>
+					<li><a href="#">Card Database</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+				<div class="overlay"></div>
+				<button class="btn nav-btn" id="openBtn">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<button class="btn nav-btn" id="closeBtn">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</nav>
+		<header>
+			<div class="container header-container">
+				<div class="header-img">
+					<img
+						src="../assets/images/card-database/database-phyrexian.png"
+						alt="Card Database written in Phyrexian language"
+					/>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="container database-container">
+				<h1>CARDS DATABASE</h1>
+				<p>
+					Search through cards from Magic's entire history and find the perfect
+					addition to your deck with our database!
+				</p>
+				<div class="search-container">
+					<form class="search-form">
+						<div class="input-and-filter">
+							<input
+								type="text"
+								class="search-input"
+								placeholder="Search for a card..."
+								required
+							/>
+							<button class="filter-btn">
+								<i class="fa-solid fa-filter"></i>
+							</button>
+						</div>
+						<button class="btn search-btn">Search</button>
+					</form>
+				</div>
+				<div class="filter-modal">
+					<div class="filter-modal-content">
+						<label for="creature">
+							<input
+								type="checkbox"
+								id="creature"
+								class="type-checkbox"
+								value="Creature"
+							/>
+							Creature
+						</label>
+						<label for="planeswalker">
+							<input
+								type="checkbox"
+								id="planeswalker"
+								class="type-checkbox"
+								value="Planeswalker"
+							/>
+							Planeswalker
+						</label>
+						<label for="instant">
+							<input
+								type="checkbox"
+								id="instant"
+								class="type-checkbox"
+								value="Instant"
+							/>
+							Instant
+						</label>
+						<label for="sorcery">
+							<input
+								type="checkbox"
+								id="sorcery"
+								class="type-checkbox"
+								value="Sorcery"
+							/>
+							Sorcery
+						</label>
+						<label for="artifact">
+							<input
+								type="checkbox"
+								id="artifact"
+								class="type-checkbox"
+								value="Artifact"
+							/>
+							Artifact
+						</label>
+						<label for="enchantment">
+							<input
+								type="checkbox"
+								id="enchantment"
+								class="type-checkbox"
+								value="Enchantment"
+							/>
+							Enchantment
+						</label>
+						<label for="land">
+							<input
+								type="checkbox"
+								id="land"
+								class="type-checkbox"
+								value="Land"
+							/>
+							Land
+						</label>
+						<label for="battle">
+							<input
+								type="checkbox"
+								id="battle"
+								class="type-checkbox"
+								value="Battle"
+							/>
+							Battle
+						</label>
+					</div>
+				</div>
+				<div class="cards-container container"></div>
+			</section>
+		</main>
+		<footer>
+			<section class="footer-container">
+				<div class="footer-left">
+					<img
+						src="../assets/images/footer/wizards-logo-purple.png"
+						alt="Wizards of the Coast Logo"
+					/>
+					<p>
+						Wizards of the Coast is a family of studios specializing in building
+						role playing, trading card, and digital games for all genres of
+						players.
+					</p>
+					<ul class="footer-wotc-terms">
+						<li>
+							<a
+								href="https://company.wizards.com/en/legal/terms"
+								target="_blank"
+								>Terms</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://company.wizards.com/en/legal/wizards-coasts-privacy-policy"
+								target="_blank"
+								>Privacy Policy</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://company.wizards.com/en/legal/code-conduct"
+								target="_blank"
+								>Code of Conduct</a
+							>
+						</li>
+					</ul>
+					<ul class="footer-wotc-social">
+						<li>
+							<a href="https://twitter.com/wizards_magic" target="_blank"
+								><i class="fa-brands fa-twitter"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/MagicTheGathering"
+								target="_blank"
+								><i class="fa-brands fa-facebook-f"></i
+							></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/wizards_magic/" target="_blank"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/@mtg" target="_blank"
+								><i class="fa-brands fa-youtube"></i
+							></a>
+						</li>
+						<li>
+							<a href="https://www.twitch.tv/magic" target="_blank"
+								><i class="fa-brands fa-twitch"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-right">
+					<div class="dev-info-container">
+						<div class="dev-info">
+							<h3>Breno Alcântara</h3>
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
+								<li><i class="fa-solid fa-location-dot"></i> Brasília, DF</li>
+								<li>
+									<i class="fa-brands fa-whatsapp"></i> +55 61 9 9122-5677
+								</li>
+							</ul>
+							<ul class="dev-socials">
+								<li>
+									<a href="https://github.com/breno-alcantara" target="_blank"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/in/brenosalcantara"
+										target="_blank"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/brenosalcantara/"
+										target="_blank"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.facebook.com/Breno.Alcantara"
+										target="_blank"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+						<div class="dev-info">
+							<h3>Lorena Costa</h3>
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
+								<li><i class="fa-solid fa-location-dot"></i> Lisboa, PT</li>
+								<li><i class="fa-brands fa-whatsapp"></i> +351 910 471 812</li>
+							</ul>
+							<ul class="dev-socials">
+								<li>
+									<a href="https://github.com/Lorenamvcosta/" target="_blank"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://linkedin.com/in/lorenamvcosta/"
+										target="_blank"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/lorenamvcosta/"
+										target="_blank"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+						<div class="dev-info">
+							<h3>Yann Costa e Silva</h3>
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
+								<li><i class="fa-solid fa-location-dot"></i> São Paulo, SP</li>
+								<li>
+									<i class="fa-brands fa-whatsapp"></i> +55 11 9 8439-7728
+								</li>
+							</ul>
+							<ul class="dev-socials">
+								<li>
+									<a href="https://github.com/ynncstslv" target="_blank"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/in/ynncstslv"
+										target="_blank"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/ynncstslv/" target="_blank"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/ynncstslv" target="_blank"
+										><i class="fa-brands fa-twitter"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="footer-copyright">
+				<div class="footer-copyright-left">
+					<small
+						>Magic: The Gathering &copy;1993-2023 Wizards of the Coast
+						LLC.</small
+					>
+				</div>
+				<div class="footer-copyright-right">
+					<small
+						>Website created by Breno Alcântara, Lorena Costa & Yann Costa e
+						Silva &copy;2023 Copyright</small
+					>
+				</div>
+			</section>
+		</footer>
+		<!-- javascript -->
+		<script src="../scripts/script.js"></script>
+		<script src="../scripts/database.js"></script>
+	</body>
+</html>

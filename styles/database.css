@@ -1,0 +1,233 @@
+/* database header */
+
+header {
+	background-image: url('../assets/images/card-database/sheoldred-header.jpg');
+}
+
+.header-container {
+	position: static;
+}
+
+.header-img img {
+	width: 100%;
+}
+
+/* database container */
+
+.database-container {
+	width: var(--container-width-lg);
+	padding: 2rem 0;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+
+.database-container h1 {
+	margin-bottom: 1rem;
+	font-size: 2.5rem;
+	letter-spacing: 0.3rem;
+	color: var(--color-purple-100);
+}
+
+.database-container p {
+	margin-bottom: 4rem;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+/* search form */
+
+.input-and-filter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.input-and-filter input {
+	width: 600px;
+	height: 50px;
+	padding-inline: 1.5rem;
+	margin-right: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 0.9rem;
+	color: var(--color-light);
+	border: 2px solid var(--color-purple-200);
+	border-radius: 50px;
+	background-color: transparent;
+}
+
+/* filter btn */
+
+.filter-btn {
+	width: 50px;
+	height: 50px;
+	font-size: 1.3rem;
+	color: var(--color-purple-200);
+	border: 2px solid var(--color-purple-200);
+	border-radius: 50%;
+	background-color: transparent;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.filter-btn:hover {
+	color: var(--color-darker);
+	background-color: var(--color-purple-200);
+}
+
+/* search btn */
+
+.search-btn {
+	width: 120px;
+	height: 45px;
+	margin-bottom: 4rem;
+	font-size: 1rem;
+	color: var(--color-light);
+	background-color: var(--color-purple-200);
+}
+
+.search-btn:hover {
+	color: var(--color-darker);
+	background-color: var(--color-purple-100);
+	transform: none;
+}
+
+/* filter modal */
+
+.filter-modal {
+	display: none;
+}
+
+.filter-modal-content {
+	width: 160px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.5rem;
+	position: relative;
+	top: 0.5rem;
+	left: 65%;
+	padding: 1.5rem 1rem;
+	color: var(--color-purple-100);
+	border: 2px solid var(--color-purple-100);
+	border-radius: 10px;
+	background-color: var(--color-dark);
+	box-shadow: inset 0 0.5rem 2rem rgba(0, 0, 0, 0.6);
+	transform: translate(-50%, -50%);
+}
+
+.filter-modal-content label {
+	font-size: 0.9rem;
+}
+
+.filter-modal-content input {
+	margin-right: 0.3rem;
+}
+
+/* cards container */
+
+.cards-container {
+	width: var(--container-width-lg);
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2rem;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+
+.cards-container img {
+	width: 100%;
+	transition: var(--transition);
+}
+
+.cards-container img:hover {
+	transform: scale(1.1);
+}
+
+/* footer */
+
+.footer-container {
+	background: linear-gradient(
+		180deg,
+		var(--color-purple-300) 0%,
+		var(--color-purple-100) 68%
+	);
+}
+
+.footer-wotc-terms a,
+.footer-wotc-social a,
+.dev-info h3,
+.dev-contact,
+.dev-socials a {
+	color: var(--color-purple-300);
+}
+
+.footer-copyright {
+	color: var(--color-purple-100);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1440px) {
+	header {
+		margin-bottom: 2rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-menu {
+		border: 2px solid var(--color-purple-100);
+	}
+
+	.cards-container {
+		width: var(--container-width-md);
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header-img img {
+		width: 85%;
+	}
+
+	.input-and-filter input {
+		width: 400px;
+	}
+
+	.cards-container {
+		width: var(--container-width-sm);
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.header-img img {
+		width: 94%;
+	}
+
+	.database-container h1 {
+		font-size: 1.8rem;
+	}
+
+	.database-container p {
+		margin-bottom: 1.5rem;
+		font-size: 0.9rem;
+	}
+
+	.input-and-filter input {
+		width: 300px;
+		height: 40px;
+	}
+
+	.filter-btn {
+		width: 40px;
+		height: 40px;
+		font-size: 1.1rem;
+	}
+
+	.cards-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

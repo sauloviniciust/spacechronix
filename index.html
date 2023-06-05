@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="SPACECHRONIX | Oficial Website" />
+	<meta property="og:image"
+		content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Fartist%2F5LPm2mrRL1VX3eMUk1mT6A&psig=AOvVaw1Jg3KjVPBzx_5tUfT0SMQQ&ust=1686038304482000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCICy6aPUq_8CFQAAAAAdAAAAABAE" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description"
+		content="Site oficial Spacechronix" />
+	<meta property="og:url" content="https://ynncstslv.github.io/coderhouse-45395-webdev-final-mtg/" />
+	<meta name="twitter:title" content="SPACECHRONIX | Oficial Website" />
+	<meta name="twitter:image"
+	content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Fartist%2F5LPm2mrRL1VX3eMUk1mT6A&psig=AOvVaw1Jg3KjVPBzx_5tUfT0SMQQ&ust=1686038304482000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCICy6aPUq_8CFQAAAAAdAAAAABAE" />
+	<meta name="twitter:description"
+	content="Site oficial Spacechronix" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./styles/index.css" />
+	<link rel="stylesheet" href="./styles/contact.css" />
+	<link rel="icon" type="image/x-icon" href="./assets/images/spacefavicon.png" />
+	<title>SPACECHRONIX | Oficial Website</title>
+</head>
+
+<body>
+	<nav>
+		<div class="container nav-container">
+			<a href="#"><img src="./assets/images/spacelogosite.png" alt="Magic: The Gathering Logo" /></a>
+			<ul class="nav-menu">
+				<li><a href=".#">Fotos</a></li>
+				<li><a href=".#">Videos</a></li>
+				<li><a href="#caminhada">historia</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+			<div class="overlay"></div>
+			<button class="btn nav-btn" id="openBtn">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+			<button class="btn nav-btn" id="closeBtn">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
+		</div>
+	</nav>
+	<header>
+		<div class="container header-container">
+			<div class="header-img">
+				<img src="./assets/images/logo personalizado sf black.png" alt="Phyrexia: All Will Be One Logo" />
+			</div>
+			<div class="header-info">
+				<p>
+				</p>
+				<!-- <a href="#caminhada"><button id="botao" class="btn header-btn">Conheça a caminhada</button></a> -->
+			</div>
+		</div>
+	</header>
+	<main>
+		<!-- <section class="upcoming-sets">
+				<div class="container upcoming-container">
+					<article class="upcoming-card">
+						<div class="upcoming-card-img">
+							<img
+								src="./assets/images/index/mtg-mom.jpg"
+								alt="March of the Machines Promo"
+							/>
+						</div>
+						<div class="upcoming-card-info">
+							<div class="upcoming-card-info-img">
+								<img
+									src="./assets/images/index/mtg-mom-logo.png"
+									alt="March of the Machines Logo"
+								/>
+							</div>
+							<p>
+								The dramatic conclusion of the four-part Phyrexian story arc
+								that began with Dominaria United — and ends with Magic forever
+								changed.
+							</p>
+							<a
+								href="https://magic.wizards.com/en/products/march-of-the-machine"
+								target="_blank"
+								><button class="btn mom-btn">More</button></a
+							>
+						</div>
+					</article>
+					<article class="upcoming-card">
+						<div class="upcoming-card-img">
+							<img
+								src="./assets/images/index/mtg-lotr.jpg"
+								alt="Tales of Middle-Earth Promo"
+							/>
+						</div>
+						<div class="upcoming-card-info">
+							<div class="upcoming-card-info-img">
+								<img
+									src="./assets/images/index/mtg-lotr-logo.png"
+									alt="Tales of Middle-Earth Logo"
+								/>
+							</div>
+							<p>
+								The long awaited cross-over product based on the The Lord of the
+								Rings, the epic high fantasy novel by J.R.R. Tolkien.
+							</p>
+							<a
+								href="https://magic.wizards.com/en/products/the-lord-of-the-rings-tales-of-middle-earth"
+								target="_blank"
+								><button class="btn lotr-btn">More</button></a
+							>
+						</div>
+					</article>
+					<article class="upcoming-card">
+						<div class="upcoming-card-img">
+							<img
+								src="./assets/images/index/mtg-cdhmasters.jpg"
+								alt="Commander Masters Promo"
+							/>
+						</div>
+						<div class="upcoming-card-info">
+							<div class="upcoming-card-info-img">
+								<img
+									src="./assets/images/index/mtg-cdhmasters-logo.png"
+									alt="Commander Masters Logo"
+								/>
+							</div>
+							<p>
+								A booster-based compilation set containing all reprinted cards
+								legal in, and intended for, the Commander format.
+							</p>
+							<a
+								href="https://magic.wizards.com/en/products/commander-masters"
+								target="_blank"
+								><button class="btn masters-btn">More</button></a
+							>
+						</div>
+					</article>
+				</div>
+			</section> -->
+		<section class="connect-wotc">
+			<div class="container connect-wotc-container">
+				<h2>Redes sociais</h2>
+				<ul class="connect-wotc-social">
+					<li>
+						<a href="https://twitter.com/spacechronix" target="_blank"><i
+								class="fa-brands fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/spacechronix" target="_blank"><i
+								class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/spacechronix/" target="_blank"><i
+								class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/@isbum/videos" target="_blank"><i
+								class="fa-brands fa-youtube"></i></a>
+					</li>
+					<li>
+						<a href="https://www.twitch.tv/spacechronix" target="_blank"><i
+								class="fa-brands fa-twitch"></i></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="database-call" id="caminhada">
+			<div class="database-call-img">
+				<img src="./assets/images/IMG_2295.JPG" alt="A hand holding some Magic: The Gathering cards" />
+			</div>
+			<div class="database-call-info">
+				<h3>Spacechronix</h3>
+				<p>
+					Saulo Vinicius, baterista vindo de uma família de músicos sempre foi incentivado a se envolver com o
+					meio musical, passando por diversos instrumentos e estilos, encontrou seu lugar no Psytrance.
+					Iniciou sua jornada de estudos em 2014, sempre agregando suas experiências pessoais e conhecimento
+					teórico musical às suas canções de forma harmoniosa, criando sensações insanas e texturas bem
+					trabalhadas, tem uma pegada muito agressiva e característica do som psicodélico, dentro de cada
+					performance tenta mesclar a história de sua música ao sentimento e energia do momento e a todo o
+					público criando uma total harmonia de som, alma e
+					corpo.
+				</p>
+				<a href="https://soundcloud.com/dark-sonik/podcast-01-another-psyde-records-live-spacechronix"
+					target="_blank">Ouça! <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</section>
+		<section class="container contact-container" id="contato">
+			<article class="contact-box">
+				<div class="contact-top">
+					<h3>CONTATO</h3>
+					<p>
+						Entre em contato para orçamentos, feedbacks, colahbs, etç...
+						Responderei assim que possivel.
+					</p>
+				</div>
+				<div class="contact-bottom" action="https://formspree.io/f/xzbqjkjp" method="POST">
+					<form class="contact-form" action="https://formspree.io/f/xzbqjkjp" method="POST">
+						<div class="form-flex">
+							<div class="form-name">
+								<label for="full-name">Nome:</label>
+								<input type="text" name="full-name" placeholder="Digite seu mome completo..." required />
+							</div>
+							<div class="form-email">
+								<label for="email">Email:</label>
+								<input id="email" type="email" name="email" placeholder="Digite seu email..."
+									required />
+							</div>
+						</div>
+						<div class="form-subject">
+							<label for="subject">Assunto:</label>
+							<input type="text" name="subject" placeholder="Digite o assunto da mensagem..."
+								required />
+						</div>
+						<div class="form-message">
+							<label for="message">Sua Mensagem:</label>
+							<textarea name="message" rows="10" placeholder="Deixe sua mensagem aqui..."
+								required></textarea>
+						</div>
+						<button type="submit" class="btn contact-btn" id="submit">Submit</button>
+					</form>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<section class="footer-container">
+			<div class="footer-left">
+				<img src="./assets/images/devsaulo.png" alt="Wizards of the Coast Logo" />
+				<p>
+					Site desenvolvido por Saulo Vinicius (Spacechronix/Koan), desenvolvedor HTML | CSS estudante de
+					desenvolvimento Fullstack na Coderhouse
+				</p>
+
+
+				</ul>
+			</div>
+			<div class="footer-right">
+				<div class="dev-info-container">
+					<div class="dev-info">
+						<h3>Sauloviniciust</h3>
+						<h4>Frontend Developer</h4>
+						<ul class="dev-contact">
+							<li><i class="fa-solid fa-location-dot"></i> Minas Gerais, MG</li>
+							<li>
+								<i class="fa-brands fa-whatsapp"></i> +55 31 9 8539-2710
+							</li>
+						</ul>
+						<ul class="dev-socials">
+							<li>
+								<a href="https://github.com/sauloviniciust" target="_blank"><i
+										class="fa-brands fa-github"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/saulo-vinicius-b05b38271" target="_blank"><i
+										class="fa-brands fa-linkedin-in"></i></a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/sauloviniciust" target="_blank"><i
+										class="fa-brands fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/sauloviniciusa" target="_blank"><i
+										class="fa-brands fa-facebook-f"></i></a>
+							</li>
+						</ul>
+					</div>
+
+		</section>
+		<section class="footer-copyright">
+			<div class="footer-copyright-left">
+				<small>SPACECHRONIX &copy;2014-2023 Psytrance MG | BR
+				</small>
+			</div>
+			<div class="footer-copyright-right">
+				<small>Website created by Sauloviniciust &copy;2023 Copyright</small>
+			</div>
+		</section>
+	</footer>
+	<!-- javascript -->
+	<script src="./scripts/script.js"></script>
+</body>
+
+</html>
