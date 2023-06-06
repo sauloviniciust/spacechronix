@@ -95,7 +95,7 @@
 .contact-bottom {
 	height: 100%;
 	padding: 3rem;
-	background-color: var(--color-red-100);
+	background-color: var(--color-red-200);
 }
 
 label {
@@ -140,13 +140,13 @@ textarea {
 	padding: 0.8rem 3rem;
 	margin: 1.5rem auto 0;
 	font-size: 0.9rem;
-	color: var(--color-light);
+	color: var(--color-red-100);
 	background-color: var(--color-dark);
 }
 
 .contact-btn:hover {
-	color: var(--color-dark);
-	background-color: var(--color-gold-100);
+	color: var(--color-gold-200);
+	background-color: var(--color-red-300);
 	transform: scale(1.01);
 }
 

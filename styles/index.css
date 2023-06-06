@@ -264,8 +264,8 @@ header {
 		to bottom,
 		#000 0%,
 		#000 50%,
-		#dcd0b4 50%,
-		#dcd0b4 100%
+		#000000 50%,
+		#125270 100%
 	);
 }
 
@@ -305,7 +305,7 @@ header {
 }
 
 .upcoming-card-info-img img {
-	width: 80%;
+	width: 50%;
 	position: relative;
 	bottom: 6.5rem;
 }
@@ -327,18 +327,18 @@ header {
 }
 
 .mom-btn {
-	color: #f2e94a;
-	border: 2px solid #f2e94a;
+	color: #d84a08;
+	border: 2px solid #d84a08;
 }
 
 .lotr-btn {
-	color: #59ab90;
-	border: 2px solid #59ab90;
+	color: #e71c1c;
+	border: 2px solid#e71c1c;
 }
 
 .masters-btn {
-	color: #d64f6d;
-	border: 2px solid #d64f6d;
+	color: #207010;
+	border: 2px solid #207010;
 }
 
 .mom-btn:hover,
@@ -348,15 +348,15 @@ header {
 }
 
 .mom-btn:hover {
-	background-color: #f2e94a;
+	background-color: #d84a08;
 }
 
 .lotr-btn:hover {
-	background-color: #59ab90;
+	background-color: #e71c1c;
 }
 
 .masters-btn:hover {
-	background-color: #d64f6d;
+	background-color: #207010;
 }
 
 /* connect with wotc */
@@ -374,7 +374,7 @@ header {
 	font-weight: 700;
 	font-size: 0.9rem;
 	letter-spacing: 1rem;
-	color: var(--color-orange);
+	color: var(--color-blue-200);
 }
 
 .connect-wotc-social {
@@ -386,7 +386,7 @@ header {
 }
 
 .connect-wotc-social a {
-	color: var(--color-orange);
+	color: var(--color-blue-200);
 	transition: var(--transition);
 }
 
@@ -418,19 +418,20 @@ header {
 .database-call-info h3 {
 	margin-bottom: 2rem;
 	font-size: 2.5rem;
-	color: var(--color-orange);
+	color: var(--color-green-100);
 }
 
 .database-call-info p {
 	margin-bottom: 4rem;
 	font-weight: 300;
 	font-size: 1.2rem;
+	color: var(--color-green-200);
 }
 
 .database-call-info a {
 	font-weight: 300;
 	font-size: 1.1rem;
-	color: var(--color-gold-100);
+	color: var(--color-green-100);
 	transition: var(--transition);
 }
 
@@ -454,7 +455,7 @@ header {
 	background: linear-gradient(
 		180deg,
 		rgb(0, 0, 0) 0%,
-		rgb(141, 140, 140) 68%
+		rgba(189, 51, 51, 0.603) 68%
 	);
 	box-shadow: inset 0 0.5rem 2rem rgba(0, 0, 0, 0.6);
 }
@@ -467,7 +468,7 @@ header {
 .footer-left p {
 	width: 75%;
 	font-weight: 300;
-	color: var(--color-blue-300);
+	color: var(--color-blue-200);
 	margin-bottom: 2rem;
 }
 
@@ -500,7 +501,7 @@ header {
 }
 
 .footer-right {
-	text-align: right;
+	text-align: center;
 }
 
 .dev-info-container {
@@ -514,7 +515,7 @@ header {
 .dev-info h3 {
 	margin-bottom: 0.5rem;
 	font-size: 1.3rem;
-	color: var(--color-blue-300);
+	color: var(--color-blue-200);
 }
 
 .dev-info h4 {
@@ -528,7 +529,7 @@ header {
 	margin-bottom: 1.5rem;
 	font-weight: 300;
 	font-size: 1rem;
-	color: var(--color-blue-300);
+	color: var(--color-blue-200);
 }
 
 .dev-contact li i {
@@ -544,7 +545,7 @@ header {
 
 .dev-socials a {
 	font-size: 1.2rem;
-	color: var(--color-blue-300);
+	color: var(--color-blue-200);
 	transition: var(--transition);
 }
 
