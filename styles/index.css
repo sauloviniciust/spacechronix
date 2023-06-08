@@ -176,7 +176,7 @@ transform: scale(3.1);
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.171);
 	z-index: 1;
 }
 
@@ -198,7 +198,7 @@ header {
 	height: 90vh;
 	position: relative;
 	margin-bottom: 5rem;
-	background-image: url('../assets/images/background\ spch.jpg');
+	background-image: url('../assets/images/background\ spch.png');
 	background-position: center center;
 	background-size: cover;
 	overflow: hidden;
@@ -256,9 +256,9 @@ header {
 	background-color: rgba(0, 0, 0, 0.76);
 }
 
-/* upcoming sets */
+/* conheca */
 
-.upcoming-sets {
+.conheca {
 	margin-top: -5rem;
 	background: linear-gradient(
 		to bottom,
@@ -269,14 +269,14 @@ header {
 	);
 }
 
-.upcoming-container {
+.conheca-container {
 	max-width: var(--container-width-lg);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 4rem;
 }
 
-.upcoming-card {
+.conheca-card {
 	text-align: center;
 	border-radius: 15px;
 	background-color: var(--color-dark);
@@ -286,31 +286,31 @@ header {
 	z-index: 10;
 }
 
-.upcoming-card:hover {
+.conheca-card:hover {
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
 	transform: scale(1.04);
 }
 
-.upcoming-card-img img {
+.conheca-card-img img {
 	width: 100%;
 	height: 50%;
 }
 
-.upcoming-card-info {
+.conheca-card-info {
 	padding: 1.3rem;
 }
 
-.upcoming-card-info-img {
+.conheca-card-info-img {
 	margin-bottom: -7rem;
 }
 
-.upcoming-card-info-img img {
+.conheca-card-info-img img {
 	width: 50%;
 	position: relative;
 	bottom: 6.5rem;
 }
 
-.upcoming-card-info p {
+.conheca-card-info p {
 	margin: 1.2rem 1.5rem 2rem;
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
@@ -359,17 +359,17 @@ header {
 	background-color: #207010;
 }
 
-/* connect with wotc */
+/* connect with spcx */
 
-.connect-wotc {
+.connect-spcx {
 	background-color: var(--color-dark);
 }
 
-.connect-wotc-container {
+.connect-spcx-container {
 	text-align: center;
 }
 
-.connect-wotc-container h2 {
+.connect-spcx-container h2 {
 	margin-bottom: 1.5rem;
 	font-weight: 700;
 	font-size: 0.9rem;
@@ -377,7 +377,7 @@ header {
 	color: var(--color-blue-200);
 }
 
-.connect-wotc-social {
+.connect-spcx-social {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -385,19 +385,19 @@ header {
 	font-size: 2rem;
 }
 
-.connect-wotc-social a {
+.connect-spcx-social a {
 	color: var(--color-blue-200);
 	transition: var(--transition);
 }
 
-.connect-wotc-social a:hover {
+.connect-spcx-social a:hover {
 	color: var(--color-orange);
 	text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
-/* database call */
+/* caminhada */
 
-.database-call {
+.caminhada {
 	display: grid;
 	grid-template-columns: 55% 45%;
 	align-items: center;
@@ -407,39 +407,39 @@ header {
 	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 
-.database-call-img img {
+.caminhada-img img {
 	width: 100%;
 }
 
-.database-call-info {
+.caminhada-info {
 	width: var(--container-width-lg);
 }
 
-.database-call-info h3 {
+.caminhada-info h3 {
 	margin-bottom: 2rem;
 	font-size: 2.5rem;
 	color: var(--color-green-100);
 }
 
-.database-call-info p {
+.caminhada-info p {
 	margin-bottom: 4rem;
 	font-weight: 300;
 	font-size: 1.2rem;
 	color: var(--color-green-200);
 }
 
-.database-call-info a {
+.caminhada-info a {
 	font-weight: 300;
 	font-size: 1.1rem;
 	color: var(--color-green-100);
 	transition: var(--transition);
 }
 
-.database-call-info a:hover {
+.caminhada-info a:hover {
 	color: var(--color-orange);
 }
 
-.database-call-info a i {
+.caminhada-info a i {
 	padding-left: 0.8rem;
 }
 
@@ -472,7 +472,8 @@ header {
 	margin-bottom: 2rem;
 }
 
-.footer-wotc-terms {
+
+.footer-spcx-terms {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -481,7 +482,7 @@ header {
 	font-weight: 300;
 }
 
-.footer-wotc-social {
+.footer-spcx-social {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -489,14 +490,14 @@ header {
 	font-size: 1.2rem;
 }
 
-.footer-wotc-terms a,
-.footer-wotc-social a {
+.footer-spcx-terms a,
+.footer-spcx-social a {
 	color: var(--color-gold-300);
 	transition: var(--transition);
 }
 
-.footer-wotc-terms a:hover,
-.footer-wotc-social a:hover {
+.footer-spcx-terms a:hover,
+.footer-spcx-social a:hover {
 	color: var(--color-orange);
 }
 
@@ -510,6 +511,10 @@ header {
 	align-content: center;
 	justify-items: end;
 	gap: 2rem;
+}
+
+.dev-info {
+ margin-left: 100px;
 }
 
 .dev-info h3 {
@@ -536,11 +541,23 @@ header {
 	padding-right: 0.4rem;
 }
 
+.dev-support a:visited {
+	color: var(--color-blue-200);
+}
+
+.dev-support a:hover {
+	color: var(--color-orange);
+}
+
 .dev-socials {
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	gap: 2rem;
+}
+.support li:hover{
+transform: scale(1.3);
 }
 
 .dev-socials a {
@@ -590,15 +607,15 @@ header {
 		font-size: 0.8rem;
 	}
 
-	.upcoming-sets {
+	.conheca {
 		margin-top: -8rem;
 	}
 
-	.upcoming-card-info-img img {
+	.conheca-card-info-img img {
 		bottom: 5rem;
 	}
 
-	.upcoming-card-info p {
+	.conheca-card-info p {
 		margin: 2.3rem 1rem 2rem;
 		font-weight: 300;
 		font-size: 0.9rem;
@@ -617,6 +634,7 @@ header {
 	.footer-left p {
 		font-size: 0.9rem;
 	}
+
 
 	.footer-copyright {
 		font-size: 1rem;
@@ -698,7 +716,7 @@ header {
 		width: 70%;
 	}
 
-	.upcoming-sets {
+	.conheca-sets {
 		background: linear-gradient(
 			to bottom,
 			#000 0%,
@@ -708,31 +726,31 @@ header {
 		);
 	}
 
-	.upcoming-container {
+	.conheca-container {
 		max-width: 50%;
 		grid-template-columns: 1fr;
 	}
 
-	.upcoming-card-info-img img {
+	.conheca-card-info-img img {
 		bottom: 8rem;
 	}
 
-	.upcoming-card-info p {
+	.conheca-card-info p {
 		margin: 0 1.5rem 2.5rem;
 		font-weight: 300;
 		font-size: 1.2rem;
 	}
 
-	.connect-wotc-social {
+	.connect-spcx-social {
 		font-size: 1.8rem;
 	}
 
-	.database-call-info h3 {
+	.caminhada h3 {
 		margin-bottom: 1rem;
 		font-size: 1.8rem;
 	}
 
-	.database-call-info p {
+	.caminhada p {
 		margin-bottom: 2rem;
 		font-size: 0.9rem;
 	}
@@ -762,7 +780,7 @@ header {
 		text-align: center;
 	}
 
-	.footer-wotc-terms {
+	.footer-spcx-terms {
 		margin-bottom: 1.5rem;
 	}
 
@@ -794,28 +812,28 @@ header {
 		font-size: 1.5rem;
 	}
 
-	.upcoming-card-info-img img {
+	.conheca-card-info-img img {
 		bottom: 6rem;
 		margin-bottom: 2rem;
 	}
 
-	.upcoming-card-info p {
+	.conheca-card-info p {
 		font-size: 1rem;
 	}
 
-	.connect-wotc-social {
+	.connect-spcx-social {
 		gap: 5rem;
 	}
 
-	.database-call-info h3 {
+	.caminhada-info h3 {
 		font-size: 1.5rem;
 	}
 
-	.database-call-info p {
+	.caminhada-info p {
 		font-size: 0.8rem;
 	}
 
-	.database-call-info a {
+	.caminhada-info a {
 		font-size: 0.9rem;
 	}
 }
@@ -871,24 +889,24 @@ header {
 		font-size: 1rem;
 	}
 
-	.upcoming-container {
+	.conheca-container {
 		max-width: var(--container-width-sm);
 	}
 
-	.connect-wotc-container h2 {
+	.connect-spcx-container h2 {
 		font-size: 0.7rem;
 		letter-spacing: 0.8rem;
 	}
 
-	.connect-wotc-social {
+	.connect-spcx-social {
 		gap: 3rem;
 	}
 
-	.connect-wotc-social a {
+	.connect-spcx-social a {
 		font-size: 1.5rem;
 	}
 
-	.database-call {
+	.caminhada {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -897,15 +915,15 @@ header {
 		text-align: center;
 	}
 
-	.database-call-info {
+	.caminhada-info {
 		padding: 1rem 0 1.5rem;
 	}
 
-	.database-call-info h4 {
+	.caminhada-info h4 {
 		margin-bottom: 0.5rem;
 	}
 
-	.database-call-info p {
+	.caminhada-info p {
 		margin-bottom: 1.5rem;
 	}
 
@@ -917,7 +935,7 @@ header {
 		width: 90%;
 	}
 
-	.footer-wotc-terms {
+	.footer-spcx-terms {
 		font-size: 0.9rem;
 	}
 
