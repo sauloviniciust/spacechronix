@@ -200,7 +200,7 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 575.98px) {
 	.form-flex {
 		flex-direction: column;
 	}
