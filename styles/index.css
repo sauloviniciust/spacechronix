@@ -754,13 +754,17 @@ header {
 	}
 
 	.footer-container {
+		height: auto;
 		grid-template-columns: 1fr;
 		place-items: center;
 		padding: 3rem 2rem;
 		text-align: center;
+	
 	}
 
-	.footer-left {
+	.footer-left 
+	.footer-right {
+		text-align: center;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -782,9 +786,9 @@ header {
 		margin-bottom: 1.5rem;
 	}
 
-	.footer-right {
+	/* .footer-right {
 		display: none;
-	}
+	} */
 
 	.footer-copyright {
 		grid-template-columns: 1fr;
@@ -858,7 +862,6 @@ header {
 	}
 
 	.nav-container img {
-		display: ;
 		margin-left: 35%;
 		transform: scale(1.8);
 		width: 35%;
