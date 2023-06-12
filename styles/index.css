@@ -360,6 +360,56 @@ header {
 	background-color: #207010;
 }
 
+/* support*/
+
+.connect-sup-container {
+	text-align: center;
+}
+.connect-sup-social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6rem;
+	font-size: 2rem;
+}
+.connect-sup-container h2 {
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+	font-size: 1rem;
+	letter-spacing: 1rem;
+	color: var(--color-green-100);
+}
+.connect-sup-social a {
+	color: var(--color-green-200);
+	transition: var(--transition);
+}
+
+.support-logo {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	/* gap: 2rem; */
+	}
+	
+.support-logo img{
+width: 50%;
+}
+
+.support li {
+	font-size: 1.5rem;
+}
+
+.support a:visited {
+	color: var(--color-green-100);
+}
+
+.support a:hover {
+	color: var(--color-orange);
+}
+.support li:hover {
+	transform: scale(1.1);
+}
 /* connect with spcx */
 
 .connect-spcx {
@@ -378,27 +428,7 @@ header {
 	color: var(--color-blue-200);
 }
 
-.connect-sup-container {
-	text-align: center;
-}
-.connect-sup-social {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 6rem;
-	font-size: 2rem;
-}
-.connect-sup-container h2 {
-	margin-bottom: 1.5rem;
-	font-weight: 700;
-	font-size: 1rem;
-	letter-spacing: 1rem;
-	color: var(--color-green-300);
-}
-.connect-sup-social a {
-	color: var(--color-green-200);
-	transition: var(--transition);
-}
+
 
 .connect-spcx-social {
 	display: flex;
@@ -562,17 +592,7 @@ header {
 	padding-right: 0.4rem;
 }
 
-.support li {
-	font-size: 1.5rem;
-}
 
-.support a:visited {
-	color: var(--color-green-100);
-}
-
-.support a:hover {
-	color: var(--color-orange);
-}
 
 .dev-socials {
 	margin-top: 20px;
@@ -582,9 +602,7 @@ header {
 	gap: 2rem;
 }
 
-.support li:hover {
-	transform: scale(1.1);
-}
+
 
 .dev-socials a {
 	font-size: 1.2rem;
@@ -922,22 +940,6 @@ header {
 		z-index: 2;
 	}
 
-	/* .nav-menu {
-		width: 18rem;
-		height: fit-content;
-		display: none;
-		flex-direction: column;
-		gap: 0;
-		position: fixed;
-		top: 5rem;
-		right: 5%;
-		border: 2px solid var(--color-gold-100);
-		border-radius: 10px;
-		background-color: var(--color-dark);
-		overflow: hidden;
-	} */
-
-
 	header {
 		margin-bottom: 1rem;
 	}
@@ -955,10 +957,23 @@ header {
 		font-size: 1rem;
 	}
 
+.connect-sup-container h2 {
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+	font-size: 1rem;
+	letter-spacing: .6rem;
+	color: var(--color-green-300);
+}
+
+.connect-sup-social a {
+	transform: scale(1%);
+}
+
+
 	.conheca-container {
 		max-width: var(--container-width-sm);
 	}
-
+/*conect*/
 	.connect-spcx-container h2 {
 		font-size: 0.7rem;
 		letter-spacing: 0.8rem;
@@ -971,7 +986,7 @@ header {
 	.connect-spcx-social a {
 		font-size: 1.5rem;
 	}
-
+/*caminhada*/
 	.caminhada {
 		display: flex;
 		flex-direction: column;
@@ -992,10 +1007,9 @@ header {
 	.caminhada-info p {
 		margin-bottom: 1.5rem;
 	}
-
+/*Footer*/
 	.footer-container {
-		width: 560px;
-		max-width: 575px;
+		max-width: 100%;
 		height: auto;
 		grid-template-columns: 1fr;
 		place-items: center;
@@ -1009,7 +1023,7 @@ header {
 	}
 
 	.footer-left p {
-		width: 60%;
+		width: 80%;
 	}
 
 	.footer-spcx-terms {
