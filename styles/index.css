@@ -365,6 +365,7 @@ header {
 .connect-sup-container {
 	text-align: center;
 }
+
 .connect-sup-social {
 	display: flex;
 	align-items: center;
@@ -372,6 +373,7 @@ header {
 	gap: 6rem;
 	font-size: 2rem;
 }
+
 .connect-sup-container h2 {
 	margin-bottom: 1.5rem;
 	font-weight: 700;
@@ -379,6 +381,7 @@ header {
 	letter-spacing: 1rem;
 	color: var(--color-green-100);
 }
+
 .connect-sup-social a {
 	color: var(--color-green-200);
 	transition: var(--transition);
@@ -390,10 +393,10 @@ header {
 	align-items: center;
 	justify-content: flex-end;
 	/* gap: 2rem; */
-	}
-	
-.support-logo img{
-width: 50%;
+}
+
+.support-logo img {
+	width: 50%;
 }
 
 .support li {
@@ -407,9 +410,11 @@ width: 50%;
 .support a:hover {
 	color: var(--color-orange);
 }
+
 .support li:hover {
 	transform: scale(1.1);
 }
+
 /* connect with spcx */
 
 .connect-spcx {
@@ -805,11 +810,10 @@ width: 50%;
 		place-items: center;
 		padding: 3rem 2rem;
 		text-align: center;
-	
+
 	}
 
-	.footer-left 
-	.footer-right {
+	.footer-left .footer-right {
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -823,7 +827,7 @@ width: 50%;
 	}
 
 	.footer-left p {
-		
+
 		width: 60%;
 		margin-bottom: 1.5rem;
 		margin-left: auto;
@@ -894,6 +898,7 @@ width: 50%;
 		max-width: 575.98px;
 		/* width: 100%; */
 	}
+
 	.nav-container img:hover {
 		margin-top: 15px;
 		transform: scale(2.1);
@@ -957,23 +962,24 @@ width: 50%;
 		font-size: 1rem;
 	}
 
-.connect-sup-container h2 {
-	margin-bottom: 1.5rem;
-	font-weight: 700;
-	font-size: 1rem;
-	letter-spacing: .6rem;
-	color: var(--color-green-300);
-}
+	.connect-sup-container h2 {
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+		font-size: 1rem;
+		letter-spacing: .6rem;
+		color: var(--color-green-300);
+	}
 
-.connect-sup-social a {
-	transform: scale(1%);
-}
+	.connect-sup-social a {
+		transform: scale(1%);
+	}
 
 
 	.conheca-container {
 		max-width: var(--container-width-sm);
 	}
-/*conect*/
+
+	/*conect*/
 	.connect-spcx-container h2 {
 		font-size: 0.7rem;
 		letter-spacing: 0.8rem;
@@ -986,7 +992,8 @@ width: 50%;
 	.connect-spcx-social a {
 		font-size: 1.5rem;
 	}
-/*caminhada*/
+
+	/*caminhada*/
 	.caminhada {
 		display: flex;
 		flex-direction: column;
@@ -1007,7 +1014,8 @@ width: 50%;
 	.caminhada-info p {
 		margin-bottom: 1.5rem;
 	}
-/*Footer*/
+
+	/*Footer*/
 	.footer-container {
 		max-width: 100%;
 		height: auto;
@@ -1015,9 +1023,9 @@ width: 50%;
 		place-items: center;
 		padding: 3rem 2rem;
 		text-align: center;
-	
+
 	}
-	
+
 	.footer-left img {
 		width: 30%;
 	}
