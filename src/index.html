@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth bg-black text-dourado-200 font-lighter " lang="pt-BR">
+<html class="scroll-smooth bg-black  text-dourado-200 font-lighter" lang="pt-BR">
 
 <head>
 	<meta charset="UTF-8" />
@@ -48,23 +48,12 @@
 				<img class="transform scale-95 hover:scale-100 hover:animate-pulse"
 					src="./assets/images/spacelogosite3.png" alt="Spacechronix Logo" /></a>
 					<ul class="flex space-x-16  ">
-							<li><a class="text-2xl  hover:text-red-600 " href=".#">Home</a></li>
+							<li><a class="text-2xl  hover:text-red-600 hidden" href=".#">Home</a></li>
 							<li><a class="text-2xl  hover:text-red-600 " href=".#conheça">Conheça</a></li>
 							<li><a class="text-2xl  hover:text-red-600 " href="#caminhada">historia</a></li>
 							<li><a class="text-2xl  hover:text-red-600 " href="#contato">Contato</a></li>
 						</ul>
-			
-						<!-- Botao mobile -->
-						<!-- <div class=" "></div>
-			
-			<button class="btn nav-btn" id="openBtn">
-				<i class="fa-solid fa-bars"></i>
-			</button>
-			<button class="btn nav-btn" id="closeBtn">
-				<i class="fa-solid fa-xmark"></i>
-			</button>
-		</div> -->
-	</nav>
+				</nav>
 
 	<header>
 		<div class="relative mb-20 bg-cover bg-center overflow-hidden"
@@ -73,18 +62,13 @@
 					<img class=" animate-pulse transform scale-50 hover:scale-75"
 					src="./assets/images/logo personalizado sf black.png" alt="spacechronix Logo" />
 				</div>
-			<!-- <div class="">
-				 header-info 
-				<p>
-				</p>
-				 <a href="#caminhada"><button id="botao" class="btn header-btn">Conheça a caminhada</button></a> 
-			</div> -->
+
 		</div>
 	</header>
 
 	<main>
-		<section class="bg-opacity-90 bg-gradient-to-b from-black  to-azul-300 " id="conheça">
-			<!-- conheça -->
+		<section class="bg-opacity-90 bg-gradient-to-b from-black  to-azul-300"
+		id="conheça">
 			<div class=" w-10/12 m-auto grid grid-cols-3 gap-20 ">
 				<article class="mb-16 mt-10 transition ease-in-out delay-100 text-center rounded-3xl bg-black 
 				shadow-2xl z-10 transform hover:scale-105 hover:bg-black ">
@@ -128,8 +112,8 @@
 				</article>
 
 				<article 
-				class="mb-16 mt-10 shadow-2xl transition ease-in-out delay-100 text-center rounded-3xl bg-black z-10 transform 
-				hover:scale-105 hover:bg-black ">
+				class="mb-16 mt-10 shadow-2xl transition ease-in-out delay-100 text-center rounded-3xl bg-black z-10 transform
+				sm:bg-laranjado-200 ">
 					<div>
 						<img class="rounded-t-3xl"
 						src="./assets/images/koanmountain.jpg"
@@ -154,8 +138,8 @@
 				
 			</div>
 		</section>
-		<section class="bg-gray-400 bg-opacity-10 caminhada shadow-2xl p-16 h-72 ">
-			<div class="text-center text-4xl ">
+		<section class="bg-gray-400 bg-opacity-10 caminhada shadow-2xl p-16 h-72">
+			<div class="text-center text-4xl sm:text-sm ">
 				<h2 class="mb-16 mt text-blue-400 tracking-wider">Redes sociais</h2>
 				<ul class="flex flex-row gap-20  justify-center text-5xl text-blue-400 ">
 					<li>
@@ -186,7 +170,7 @@
 			</div>
 		</section>
 		<section class="grid grid-cols-2 gap-9 p-0 drop-shadow-2xl" id="caminhada">
-			<div>
+			<div class="">
 				<img src="./assets/images/IMG_2295.JPG" alt="spacechronix tocando na roots" />
 			</div>
 			<div class="max-w-6xl mt-8 font-lighter">
@@ -250,30 +234,31 @@
 				</div>
 				<div class="p-6 bg-vermelho-200 bg-opacity-80 max-w-screen-2xl max-h-full rounded-b-2xl h-fit z-10">
 					<form class="space-y-4  text-black" action="https://formspree.io/f/xzbqjkjp" method="POST">
-						<div class="flex space-x-4">
-							<div class="w-1/2">
+						<div class="flex space-x-4 ">
+							<div class="w-1/2 ">
 								<label class="text-3xl textre" for="full-name" class="block">Nome:</label>
 								<input type="text" name="full-name" placeholder= "Digite seu nome completo..." required
-									class="w-full text-2xl font-lighter focus:outline-none text-dourado-200 px-4 mb-4 mt-2 py-2 rounded-lg bg-black " />
+									class="w-full text-2xl font-lighter focus:outline-none px-4 mb-4 mt-2 py-2 bg-black rounded-lg" />
 							</div>
-							<div class="w-1/2">
+							<div class="w-1/2 ">
 								<label class="text-3xl font-lighter" for="email" class="block ">Email:</label>
 								<input id="email" type="email" name="email" placeholder="Digite seu email..." required
-									class="w-full text-2xl font-lighter focus:outline-none  text-dourado-200 px-4 mb-4 mt-2 py-2 rounded-lg bg-black " />
+									class="w-full text-2xl font-lighter focus:outline-none px-4 mb-4 mt-2 py-2 rounded-lg bg-black " />
 							</div>
 						</div>
 						<div>
 							<label class="text-3xl textre" for="subject" class="block">Assunto:</label>
 							<input type="text" name="subject" placeholder="Digite o assunto da mensagem..." required
-								class="w-full text-2xl focus:outline-none font-lighter text-dourado-200 px-4 mb-4 mt-2 py-2 rounded-lg bg-black " />
+								class="w-full text-2xl focus:outline-none font-lighter px-4 mb-4 mt-2 py-2 rounded-lg bg-black " />
 						</div>
 						<div>
 							<label class="text-3xl textre" for="message" class="block ">Sua Mensagem:</label>
 							<textarea name="message" rows="10" placeholder="Deixe sua mensagem aqui..." required
-								class="w-full text-2xl font-lighter focus:outline-none text-dourado-200 px-4 mb-4 mt-2 py-2 rounded-lg bg-black "></textarea>
+								class="w-full text-2xl font-lighter focus:outline-none px-4 mb-4 mt-2 py-2 rounded-lg bg-black "></textarea>
 						</div>
 						<div class="flex justify-center ">
-						<button type="submit" class=" bg-black font-ligther hover:bg-vermelho-300  hover:text-dourado-300 hover:shadow-2xl text-vermelho-100 text-3xl p-12 py-2 px-4 rounded-3xl">Submit</button>
+						<button type="submit" class=" bg-black font-ligther text-vermelho-100 text-3xl p-12 py-2 px-4 rounded-3xl
+						hover:bg-vermelho-300  hover:text-dourado-300 hover:shadow-2xl ">Submit</button>
 					</div>
 					</form>
 				</div>
@@ -336,12 +321,12 @@
 		
 					
 		</section>
-		<section class="p-4 grid grid-cols-3 font-lighter text-lg text-dourado-200 align-middle">
-			<div class="col-span-2 ">
+		<section class="p-4 flex font-lighter text-lg">
+			<div class="mr-auto">
 				<small>SPACECHRONIX &copy;2014-2023 Psytrance MG | BR
 				</small>
 			</div>
-			<div class=" text-center">
+			<div class=>
 				<small>Website created by Sauloviniciust &copy;2023 Copyright</small>
 			</div>
 		</section>
