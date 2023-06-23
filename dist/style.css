@@ -42,7 +42,7 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-  tab-size: 4;
+     tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -85,7 +85,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -420,30 +420,6 @@ video {
 
 [hidden] {
   display: none;
-}
-
-:root {
-  --color-laranja: 238, 60, 28;
-  --color-dourado-100: 220, 208, 180;
-  --color-dourado-200: 250, 244, 230;
-  --color-dourado-300: 87, 74, 52;
-  --color-azul-100: 196, 226, 249;
-  --color-azul-200: 68, 150, 213;
-  --color-azul-300: 31, 48, 74;
-  --color-roxo-100: 208, 179, 241;
-  --color-roxo-200: 133, 99, 214;
-  --color-roxo-300: 52, 32, 100;
-  --color-vermelho-100: 248, 53, 56;
-  --color-vermelho-200: 141, 31, 29;
-  --color-vermelho-300: 65, 10, 9;
-  --color-verde-100: 151, 221, 113;
-  --color-verde-200: 105, 140, 86;
-  --color-verde-300: 36, 70, 35;
-  --color-light: 245, 245, 245;
-  --color-dark: 14, 14, 14;
-  --color-darker: 0, 0, 0;
-  --color-primary: rgb(255 115 179);
-  --color-secondary: rgb(111 114 185);
 }
 
 *, ::before, ::after {
@@ -826,6 +802,10 @@ video {
   resize: both;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -856,6 +836,10 @@ video {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .space-x-16 > :not([hidden]) ~ :not([hidden]) {
@@ -1300,3 +1284,20 @@ video {
     line-height: 1.25rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
