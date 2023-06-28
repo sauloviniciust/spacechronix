@@ -1,10 +1,10 @@
 {
-  "name": "spcx",
+  "name": "templatetail",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
+    "start": "tailwindcss -i ./src/main.css -o ./dist/style.css --watch"
   },
   "keywords": [],
   "author": "",
